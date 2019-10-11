@@ -166,12 +166,13 @@ type MarshalerJSONArray interface {
 
 // An Encoder writes JSON values to an output stream.
 type Encoder struct {
-	buf      []byte
-	isPooled byte
-	w        io.Writer
-	err      error
-	hasKeys  bool
-	keys     []string
+	buf         []byte
+	isPooled    byte
+	w           io.Writer
+	err         error
+	hasKeys     bool
+	keys        []string
+	ExtraParams map[string]interface{}
 }
 
 // AppendBytes allows a modular usage by appending bytes manually to the current state of the buffer.
