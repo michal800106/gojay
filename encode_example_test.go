@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/francoispqt/gojay"
+	"github.com/michal800106/gojay"
 )
 
 func ExampleMarshal_string() {

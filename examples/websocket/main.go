@@ -17,9 +17,9 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/francoispqt/gojay/examples/websocket/client"
-	"github.com/francoispqt/gojay/examples/websocket/comm"
-	"github.com/francoispqt/gojay/examples/websocket/server"
+	"github.com/michal800106/gojay/examples/websocket/client"
+	"github.com/michal800106/gojay/examples/websocket/comm"
+	"github.com/michal800106/gojay/examples/websocket/server"
 )
 
 func createServer(done chan error) {
