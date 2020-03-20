@@ -114,7 +114,7 @@ func (dec *Decoder) assertTrue() error {
 			}
 		case 3:
 			switch dec.data[dec.cursor] {
-			case ' ', '\b', '\t', '\n', ',', ']', '}':
+			case ' ', '\b', '\t', '\n', '\r', ',', ']', '}':
 				// dec.cursor--
 				return nil
 			default:
